@@ -12,7 +12,7 @@ INNER JOIN categories on categories.CategoryID = products.CategoryID
 WHERE categories.Name = 'computers';
  
 /* joins: find all product names, product prices, and products ratings that have a rating of 5 */
- SELECT products.Name, product.price, reviews.Rating
+ SELECT products.Name, products.Price, reviews.Rating
  from products
  LEFT JOIN reviews ON reviews.ProductID = products.ProductID
  WHERE reviews.Rating = 5;
